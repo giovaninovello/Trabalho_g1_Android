@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__cadastrar_km"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.giovani.km.Km_Activity">
+
+
+    <Button
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSalvar"
+        android:onClick="Salvar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        style="@android:style/Widget.Button" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="0"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Listar "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSalvar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnListar"
+        android:onClick="Lista"
+        android:layout_toLeftOf="@+id/btnNovo"
+        android:layout_toStartOf="@+id/btnNovo"
+        style="@android:style/Widget.Button" />
+
+    <Button
+        android:text="Excluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnExcluir"
+        android:layout_above="@+id/buttonSalvar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnNovo"
+        android:layout_toEndOf="@+id/btnNovo"
+        android:onClick="Excluir"
+        style="@android:style/Widget.Button" />
+
+    <Button
+        android:text="Novo Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNovo"
+        android:onClick="Novo"
+        android:layout_alignBaseline="@+id/btnExcluir"
+        android:layout_alignBottom="@+id/btnExcluir"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="29dp"
+        android:id="@+id/edtDestino"
+        android:hint="Informe o Destino"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/editText_km_final"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_km_final"
+        android:hint="Informe a Kilometragem Final"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/editText_km_inicial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/editText_km_inicial"
+        android:hint="Informe a Kilometragem Inicial"
+        android:textStyle="normal|bold|italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtid"
+        android:layout_alignLeft="@+id/editText_km_final"
+        android:layout_alignStart="@+id/editText_km_final"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
